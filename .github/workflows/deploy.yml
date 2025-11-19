@@ -28,7 +28,7 @@ jobs:
         run: dotnet publish --configuration Release --output ./publish
 
       - name: Deploy to Azure Web App (staging)
-        uses: azure/webapps-deploy@v2
+        uses: azure/webapps-deploy@v3
         with:
           app-name: testappniedkamil777              # dokładnie jak w Azure
           slot-name: staging                         # dokładnie jak slot
