@@ -30,6 +30,7 @@ jobs:
       - name: Deploy to Azure Web App (staging)
         uses: azure/webapps-deploy@v2
         with:
-          app-name: testappniedkamil777
+          app-name: testappniedkamil777              # dokładnie jak w Azure
+          slot-name: staging                         # dokładnie jak slot
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISH_PROFILE }}
           package: ./publish
