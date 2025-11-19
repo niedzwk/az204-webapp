@@ -31,6 +31,5 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: testappniedkamil777
-          slot-name: staging
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISH_PROFILE }}
           package: ./publish
